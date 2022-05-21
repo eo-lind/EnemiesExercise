@@ -40,5 +40,15 @@ const enemiesArr = [
 ]
 
 const generateEnemyList = () => {
-    
+    console.log("My Enemies List!");
+    console.log("----------------")
+    enemiesArr.forEach(enemyObj => {
+        if (enemyObj.isReallyHated === true) {
+            console.log(`${enemyObj.firstName} ${enemyObj.lastName} (Really, Really dislike!)`)
+        } else {
+            console.log(`${enemyObj.firstName} ${enemyObj.lastName}`)
+        }
+    });
 }
+
+generateEnemyList()
